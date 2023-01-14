@@ -19,6 +19,7 @@
     --dark-blue: #0A0826;
     --try: 1px solid red;
     --white: white;
+    --yellow: #FB8200;
 }
 /* Common class */
 body{
@@ -127,3 +128,46 @@ body{
 /* company end */
 
 /* collection */
+.collection{
+    margin-top: 100px;
+    margin-left: 196px;
+}
+
+.collection-item{
+    padding: 15px;
+    width: 329px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.collection-img{
+    width: 300px;
+    height: 256px;
+}
+
+.item-heading{
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--black);
+}
+
+.item-tk{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+}
+.rating{
+    display: flex;
+    gap: 8px;
+}
+.fa-solid{
+    color: var(--yellow);
+    /* width: 16px;
+    height: 16px; */
+}
+
+.rating-num{
+    /* font-weight: 700;
+    font-size: 14px; */
+}
