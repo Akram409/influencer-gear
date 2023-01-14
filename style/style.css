@@ -20,6 +20,7 @@
     --try: 1px solid red;
     --white: white;
     --yellow: #FB8200;
+    --gray: #6C6C6C;
 }
 /* Common class */
 body{
@@ -108,7 +109,6 @@ body{
     width: 440px;
     height: 414px;
 }
-
 /* banner End */
 
 /* company start */
@@ -127,12 +127,27 @@ body{
 
 /* company end */
 
-/* collection */
+/* collection  Start */
 .collection{
-    margin-top: 100px;
-    margin-left: 196px;
+    margin-top: 80px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 50px;
 }
 
+.collection-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.collection-heading{
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 30px;
+}
 .collection-item{
     padding: 15px;
     width: 329px;
@@ -163,11 +178,114 @@ body{
 }
 .fa-solid{
     color: var(--yellow);
-    /* width: 16px;
-    height: 16px; */
+    font-size: 12px;
 }
 
-.rating-num{
-    /* font-weight: 700;
-    font-size: 14px; */
+.rating-num, .rating-description{
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 4px;
+    color: var(--black);
 }
+
+
+/* collection  End */
+
+/* See more  Start */
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+    margin-bottom: 100px;
+}
+
+.see-more-text , .filled{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--hot-pink);
+}
+
+/* See more  End */
+
+/* summary start */
+.summary{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 270px;
+}
+
+.sum-img img{
+    width: 404px;
+    height: 270px;
+    border-radius: 7px;
+    border: 0;
+
+}
+.sum-head{
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+}
+.sum-description{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 16px;
+    padding-right: 50px;
+}
+.sum-btn{
+    font-weight: 700;
+    font-size: 16px;
+    width: 140px;
+    height: 44px;
+    background-color: var(--hot-pink);
+    border: 0;
+    color: white;
+}
+
+/* summary End */
+
+/* Footer start */
+.footer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 280px;
+    background-color: var(--dark-blue);
+}
+
+.footer-info{
+    margin-top: 100px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+.footer-head{
+    font-weight: 700;
+font-size: 24px;
+color: var(--background);
+margin-bottom: 3px;
+}
+
+.footer-text-one , .footer-text-two{
+    font-weight: 700;
+    font-size: 14px;
+    color: #D9DBE1;
+    margin-bottom: 3px;
+}
+
+.footer-icon{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Footer End */
